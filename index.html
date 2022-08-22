@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Advice Generator</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="content">
+            <p class="top-text">ADVICE #<span class="id">117</span></p>
+            <p class="body-text">
+                "<span class="main-text">It is easy to sit up and take
+                    notice, what's difficult is getting
+                    up and taking action.</span>"
+            </p>
+            <div class="lines">
+                <span class="line"></span>
+                <div>
+                    <span class="line-vertical"></span>
+                    <span class="line-vertical"></span>
+                </div>
+                <span class="line"></span>
+            </div>
+            <a href="#" class="rounded">
+                <i class="icon fas fa-dice-five"></i>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        const displayText = document.querySelector('.main-text');
+        const topText = document.querySelector('.id');
+        const btn = document.querySelector('.icon');
+
+        btn.addEventListener('click', fetchData);
+
+        function fetchData() {
+            fetch('https://api.adviceslip.com/advice')
+                .then(data => data.json())
+                .then(result => {
+                    const { slip: { id, advice } } = result;
+                    topText.textContent = id;
+                    displayText.textContent = advice;
+                })
+                .catch(error => console.log(error))
+        }
+
+        fetchData()
+    </script>
+</body>

@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-inline: 1.5rem;
+}
+
+.content {
+  background-color: hsl(217, 19%, 24%);
+  flex-basis: clamp(30rem, 3vw, 50rem);
+  height: clamp(300px, 3vh, 350px);
+  border-radius: 5%;
+  padding: clamp(25px, 5vw, 50px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+
+  box-shadow: 1px 2px 11px -1px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 1px 2px 11px -1px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 1px 2px 11px -1px rgba(0, 0, 0, 0.48);
+}
+
+.top-text {
+  color: hsl(150, 100%, 66%);
+  font-weight: normal;
+  font-size: 0.8rem;
+  letter-spacing: 1.8px;
+}
+
+.body-text {
+  color: hsl(193, 38%, 86%);
+  margin-top: 2rem;
+  font-size: clamp(0.9rem, 5vw, 1.3rem);
+  letter-spacing: 1.3px;
+}
+
+.rounded {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%);
+  background-color: hsl(150, 100%, 66%);
+}
+
+.icon {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icon:hover,
+.icon:active {
+  box-shadow: 3px -5px 61px 12px rgba(82, 255, 168, 0.79);
+  -webkit-box-shadow: 3px -5px 61px 12px rgba(82, 255, 168, 0.79);
+  -moz-box-shadow: 3px -5px 61px 12px rgba(82, 255, 168, 0.79);
+}
+
+.lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.line {
+  border-bottom: 1px solid #777;
+  width: 40%;
+  display: inline-block;
+}
+
+.line-vertical {
+  border-right: 5px solid hsl(193, 38%, 86%);
+  border-radius: 80px;
+  height: 20px;
+  display: inline-block;
+}
+
+.line-vertical:first-child {
+  margin-right: 0.3rem;
+}
+
+/* - Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%) */
