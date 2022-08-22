@@ -4,7 +4,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -12,9 +11,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
+
 
 ### The challenge
 
@@ -39,6 +37,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -48,6 +47,6 @@ I major used Flexbox in structuring my page and also leverage on clamp function 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Tijanieneye10)
-- Twitter - [@yourusername](https://www.twitter.com/tijanieneye)
+- Website - [Visit my portfolio](https://www.tijanieneye10.github.io/portfolio/)
+- Frontend Mentor - [@Tijanieneye10](https://www.frontendmentor.io/profile/Tijanieneye10)
+- Twitter - [@tijanieneye](https://www.twitter.com/tijanieneye)
